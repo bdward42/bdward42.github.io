@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Patua+One');
+
+.navbar {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #247ba0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  margin: 0px;
+}
+
+.nav-main{
+  z-index: 2;
+  justify-content: flex-start;
+}
+
+.nav-extend {
+  z-index: 1;
+  margin-top: 40px;
+  height: 30px;
+  justify-content: flex-end;
+}
+
+.navbutton{
+  display: visible;
+}
+
+.menu-toggle{
+  display: none;
+  margin: 0px;
+}
+
+.navbar a {
+  font-family: "Patua One";
+  color: white;
+  text-decoration: none;
+}
+
+.nav-main a {
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 15px;
+}
+
+.nav-main a:hover{
+  background: #2990bc;
+  cursor: pointer;
+  font-size: larger;
+  padding-top: 10px;
+}
+
+
+.nav-extend a {
+  font-size: 15px;
+  padding: 5px 5px;
+}
+
+.nav-extend a:hover{
+  padding-top: 5px;
+  font-size: 18px;
+  background: #2990bc;
+  cursor: pointer;
+}
+
+#name {
+  padding-top: 10px;
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+#name:hover {
+  font-size: 25px;
+  padding-top: 5px;
+  margin-right: 20px;
+}
+
+h3, p {
+  color: #4f4347;
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
+}
+
+h2 {
+  font-family: "Patua One";
+  text-align: center;
+}
+
+.wrapper {
+  position: absolute;
+  top: 40px; left: 0px; right: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card {
+  margin: 0px;
+  padding: 1rem 1rem 1rem 1rem;
+  min-width: 320px;
+}
+
+.card-light {
+  background: #ccdde2;
+}
+
+.card-dark {
+  background: #98d2eb
+}
+
+.profile-image {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  border: 2px solid #2990bc;
+  margin-left: 2rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.about-text{
+  max-width: 500px;
+  min-width: 250px;
+}
+
+.main-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.portfolio-display {
+  width: 28rem;
+  height: 20rem;
+  background: #ccdde2;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio-display:hover{
+  background: #247ba0;
+}
+
+.portfolio-img {
+  max-width: 98%;
+  vertical-align: middle;
+  height: 19rem;
+}
+
+.card-contact {
+  min-height: 25rem;
+  padding-bottom: 4rem;
+}
+
+.contact-element{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-form {
+  width: 30rem;
+  margin-right: 2rem;
+}
+
+.contact-input {
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  padding: 0.2rem;
+  margin-bottom: 0.3rem;
+  width: 100%
+}
+
+.input-message {
+  min-height: 4rem;
+}
+
+.button-custom {
+  border-radius: 5px;
+  border: 1px solid #247ba0;
+  cursor: pointer;
+  padding: 0.2rem;
+  margin-left: 0.3rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.button-custom:hover{
+  background: #98d2eb;
+}
+
+.button-form {
+  width: 100%;
+}
+
+.button-social {
+  width: 4rem;
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
+  text-align: center;
+  background: white;
+  color: black;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.buttons-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+ul {
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: #247ba0;
+}
+
+
+
+
+@media only screen and (max-width: 1200px){
+  .portfolio-display {
+    width: 20rem;
+    height: 18rem;
+  }
+  
+  .portfolio-img {
+  max-width: 98%;
+  vertical-align: middle;
+  max-height: 17rem;
+}
+}
+@media only screen and (min-width: 720px){
+  .nav-extend{
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 720px){
+  .nav-main {
+    justify-content: space-between;
+  }
+  .nav-button{
+    display:none;
+  }
+  
+  .menu-toggle{
+    display: block;
+  }
+  
+  #name {
+    margin-right: 0.5rem;
+  }
+}
